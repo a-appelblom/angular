@@ -1,0 +1,4 @@
+<img *ngIf="locked || selected; else elseBlock" [src]="card.image" alt="" />
+<ng-template #elseBlock>
+  <img [src]="joker" alt="" />
+</ng-template>
